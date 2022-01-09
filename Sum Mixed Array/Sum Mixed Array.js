@@ -3,5 +3,6 @@
 // Return your answer as a number.
 
 function sumMix(x){
-    return (x.map(x=>typeof x==='string'?+x:x)).reduce((a,b)=>a+b);
+    return (x.map(x=>typeof x==='string'?+x:x)).reduce((a,b)=>a+b
+    );
 }
