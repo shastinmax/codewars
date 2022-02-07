@@ -23,6 +23,5 @@ function findMissingLetter(array) {
             find = resArr[i]
         }
     }
-
     return find;
 }
