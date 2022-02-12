@@ -8,3 +8,11 @@ function solution(str) {
     }
     return res
 }
+
+let user={
+    name:'max',
+    age:'43',
+    sayHello(){
+        console.log('sdvs')
+    }
+}
