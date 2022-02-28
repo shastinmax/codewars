@@ -8,7 +8,8 @@
 
 
 const capitalize = s => {
-    let a = s.split('').map((v,i) => i % 2 !== 0 ? v.toLowerCase() : v.toUpperCase()).join('')
-    let b = s.split('').map((v,i) => i % 2 !== 0 ?  v.toUpperCase() : v.toLowerCase()).join('')
-    return [a,b]
+    let a = s.split('').map((v, i) => i % 2 !== 0 ? v.toLowerCase() : v.toUpperCase()).join('')
+    let b = s.split('').map((v, i) => i % 2 !== 0 ? v.toUpperCase() : v.toLowerCase()).join('')
+    return [a, b]
 };
+
