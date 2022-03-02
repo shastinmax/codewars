@@ -15,3 +15,4 @@ function getLargerNumbers(a, b) {
     }
     return arr;
 }
+
