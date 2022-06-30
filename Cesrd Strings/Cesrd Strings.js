@@ -17,3 +17,21 @@ function uncensor(infected, discovered) {
 
 	return infected
 }
+const family = ['Peter', 'Ann', 'Alex', 'Linda'];
+
+function showFamily(arr) {
+	console.log(arr.join(' '))
+}
+showFamily(family)
+
+const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+const str = 'CNY'
+
+function availableCurr(arr, missingCurr) {
+	let newArr = arr.filter(el=>el!==missingCurr)
+	let strrr = ''
+	newArr.forEach(el=> strrr += el + '\n')
+	console.log(strrr)
+	return ''
+}
+availableCurr(additionalCurrencies,str)
