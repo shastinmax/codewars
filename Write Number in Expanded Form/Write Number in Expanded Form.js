@@ -17,3 +17,23 @@ function expandedForm(num) {
 	}
 	return res.join(',').replace(/,/gi, ' + ')
 }
+
+function evenOrOdd(str) {
+
+	const array = str.split('');
+
+	let odd = [];
+	let even = [];
+
+	for(let i = 0; i < array.length; i++){
+		array[i] = Number(array[i])
+		array[i] % 2 === 0 ? even.push(array[i]) : odd.push(array[i])
+	}
+
+	odd = odd.reduce((acc, item) => acc + item, 0);
+	even = even.reduce((acc, item) => acc + item , 0);
+
+	if(even > odd) return 'Even is greater than Odd';
+	if(even < odd) return 'Odd is greater than Even';
+	if(even === odd) return 'Even and Odd are the same';
+}
