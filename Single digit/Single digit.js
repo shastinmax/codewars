@@ -13,13 +13,14 @@
 // 16 --> (binary) 10000
 // 10000 --> (sum of binary digits) 1
 function singleDigit(n) {
-	if(('' + n).length === 1){
+	if (('' + n).length === 1) {
 		return n
 	}
 	let numBinar = n.toString(2)
-	let res = String(numBinar).split('').map(el=>+el).reduce((acc,num)=>acc+num)
-	while(res > 9){
-		res = String(res.toString(2)).split('').map(el=>+el).reduce((acc,num)=>acc+num)
+	let res = String(numBinar).split('').map(el => +el).reduce((acc, num) => acc + num)
+	while (res > 9) {
+		res = String(res.toString(2)).split('').map(el => +el).reduce((acc, num) => acc + num)
 	}
 	return res
 }
+
