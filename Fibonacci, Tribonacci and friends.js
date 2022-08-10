@@ -9,15 +9,16 @@
 // xbonacci {1,0,0,0,0,0,1} 10 = {1,0,0,0,0,0,1,2,3,6}
 // xbonacci {1,1} produces the Fibonacci sequence
 
-function Xbonacci(signature,n){
-	if(signature.length > n){
+function Xbonacci(signature, n) {
+	if (signature.length > n) {
 		return signature.slice(0, n)
 	}
 	let arr = []
 	let res
-	for(let i = 0; signature.length < n;  i++){
-		res = signature.slice(i).reduce((a,b)=>a+b)
+	for (let i = 0; signature.length < n; i++) {
+		res = signature.slice(i).reduce((a, b) => a + b)
 		signature.push(res)
 	}
 	return signature
 }
+
