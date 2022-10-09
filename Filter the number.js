@@ -8,6 +8,21 @@
 // You will be given a string of numbers and letters mixed up, you have to return all the numbers in that string in the order they occur.
 //
 
-const filterString = (value) => {
-	return +value.replace(/[a-zA-Z]/g,'')
+// const filterString = (value) => {
+// 	return +value.replace(/[a-zA-Z]/g, '')
+// }
+
+let obj = {}
+let count = 1
+
+function coun (str) {
+	obj[str] = count++
 }
+
+coun('as')
+coun('as0')
+coun('as1')
+
+console.log(obj,'++')
+console.log(count,'--++')
+
